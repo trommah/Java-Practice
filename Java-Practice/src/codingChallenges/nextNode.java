@@ -1,5 +1,8 @@
 package codingChallenges;
-
+/*
+ * Write a program where, given a binary tree with nodes that have an extra 'next' Node variable, set next to be 
+ * the Node in the tree to the right at the same height. 
+ */
 import java.util.LinkedList;
 
 import classes.BinaryTree;
