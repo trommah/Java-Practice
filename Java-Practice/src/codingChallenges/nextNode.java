@@ -1,7 +1,7 @@
 package codingChallenges;
 /*
- * Write a program where, given a binary tree with nodes that have an extra 'next' Node variable, set next to be 
- * the Node in the tree to the right at the same height. 
+ * Given a binary tree, each node has a null "next node" , which points to the next node in the same level (left to right).
+	Update the given tree so that each node has a value in their "next" field.
  */
 import java.util.LinkedList;
 
