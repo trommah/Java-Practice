@@ -11,28 +11,29 @@ import java.io.*;
 
 class GFG {
 	public static void main (String[] args) {
-		 Scanner s=new Scanner(System.in);
-		 int t=s.nextInt();
+		 Scanner s=new Scanner("testCase.txt");
+     int t = s.nextInt();
 		 int[][] gold;
 		 int n, m;
-		 
+		 GFG gfg = new GFG();
 		 for(int i=0;i<t;i++)
 		 {
-		    int n = s.nextInt();
-		    int m = s.nextInt();
+		    n = s.nextInt();
+		    m = s.nextInt();
+        gold = new int[n][m];
 		    Scanner lineScanner = new Scanner(s.nextLine());
 		    for(int j = 0; j < n; j++)
 		        for(int k = 0; k < m; k++)
 		        {
 		            gold[j][k] = lineScanner.nextInt();
 		        }
-		        System.out.print(findGold(gold));
+		        System.out.print(gfg.findGold(gold));
 		 }
+     s.close();
 		 
 	}
-}
 
-public int findGold(int[][] gold)
+  public int findGold(int[][] gold)
 {
     int[][] maxGold = new int[gold.length][gold[0].length];
     for(int l = 0; l < gold.length; l++)
@@ -45,7 +46,7 @@ public int findGold(int[][] gold)
     int maximumGold = 0;
     for(int i = 0; i < gold.length; i++)
     {
-        maximumGold = Math.max(maximumGold, maximizedGold(gold, i, 0, maxGold);
+        maximumGold = Math.max(maximumGold, maximizedGold(gold, i, 0, maxGold));
     }
     return maximumGold;
 }
@@ -57,7 +58,11 @@ public int maximizedGold(int[][] gold, int i, int j, int[][] maxGold)
         return q;
     if(maxGold[i][j] > 0)
         return maxGold[i][j];
-    q = Math.max(maximizedGold(gold, i - 1, j + 1, maxGold), maximizedGold(gold, i, j + 1, maxGold),                                     maximizedGold(gold, i + 1, j + 1, maxGold));
+    q = Math.max(Math.max(maximizedGold(gold, i - 1, j + 1, maxGold), maximizedGold(gold, i, j + 1, maxGold)),                                     maximizedGold(gold, i + 1, j + 1, maxGold));
     maxGold[i][j] = q;
     return q;
 }
+}
+
+
+
