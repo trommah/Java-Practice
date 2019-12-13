@@ -1,4 +1,4 @@
-package codingChallenges;
+package codingChallenges.DynamicProgramming;
 //Dynamic Programming Implementation of longest palindromic substring
 public class LongestPalindromicSubstring {
 

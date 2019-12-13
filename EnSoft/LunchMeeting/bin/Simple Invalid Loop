@@ -1,0 +1,12 @@
+Map:
+a b
+a c
+c d
+d e
+e c
+Avoid:
+
+Peggy:
+a
+Sam:
+b

@@ -1,0 +1,28 @@
+Map:
+a e
+e f
+f h
+j i
+i f
+g h
+h a
+a c
+c d
+d b
+b k
+k l
+l m
+m k
+d n
+n o
+o p
+p n
+p q
+q s
+r q
+Avoid:
+
+Peggy:
+a
+Sam:
+b

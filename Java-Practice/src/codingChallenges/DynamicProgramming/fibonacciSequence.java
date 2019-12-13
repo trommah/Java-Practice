@@ -1,4 +1,4 @@
-package codingChallenges;
+package codingChallenges.DynamicProgramming;
 
 import java.util.Scanner;
 

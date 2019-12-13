@@ -1,0 +1,15 @@
+Map:
+HI e
+e d
+HI b
+b c
+c d
+d HI
+d Rand_string
+Rand_string d
+Avoid:
+d
+Peggy:
+HI
+Sam:
+e d
