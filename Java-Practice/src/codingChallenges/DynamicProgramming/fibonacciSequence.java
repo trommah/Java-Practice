@@ -13,8 +13,10 @@ public class fibonacciSequence {
 		fib[1] = 1;
 		for(int j = 2; j <= i; j++)
 			fib[j] = fib[j - 1] + fib[j-2]; 
-		System.out.print(fib[i]);
 		scan.close();
+		System.out.print(fib[i]);
+		
+		
 	}
 
 }
